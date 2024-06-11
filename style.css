@@ -1,10 +1,12 @@
-body{
+body {
     font-family: "Inter", sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.main-menu{
+
+.main-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,14 +16,17 @@ img{
     background: linear-gradient(90.61deg, #591BFF -1.52%, rgba(123, 74, 255, 0.67) 97.59%);
 
 }
-.main-menu ul{
+
+.main-menu ul {
     display: inline-block;
 }
-.main-menu ul li{
+
+.main-menu ul li {
     list-style: none;
     display: inline-block;
 }
-.main-menu ul li a{
+
+.main-menu ul li a {
     padding: 10px 15px;
     text-decoration: none;
     display: inline-block;
@@ -30,14 +35,41 @@ img{
     color: white;
 }
 
-.menu-right{
+.menu-right {
     display: flex;
     align-items: center;
 }
-.menu-right img{
+
+.menu-right img {
     width: 30px;
     height: 30px;
     object-fit: cover;
     border-radius: 100%;
     margin-right: 10px;
+}
+
+/* Banner Section */
+.banner-section {
+    background: url('./img/tv.webp') no-repeat top;
+    background-size: cover;
+    color: white;
+    padding: 130px 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.btn-one{
+    background: linear-gradient(98.21deg, #7342F9 4.46%, #8053FA 95.19%);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+
+}
+.btn-two{
+    background:transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+
 }
