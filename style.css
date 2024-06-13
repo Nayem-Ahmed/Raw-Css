@@ -214,3 +214,61 @@ img {
     left: 170px;
     background-color: #111;
 }
+
+.team-image {
+    width: 30%;
+    position: relative;
+}
+
+.team-image img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.team-icon span i {
+    font-size: 20px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    color: red;
+    display: inline-block;
+    transition: .3s ease-in-out;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team-image:hover .team-icon span i {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Hover effect for icons */
+.team-image:hover .team-icon span:nth-child(1) i {
+
+    transition-delay: 0.1s;
+    /* Delay for the first icon */
+}
+
+.team-image:hover .team-icon span:nth-child(2) i {
+
+    transition-delay: 0.3s;
+    /* Delay for the second icon */
+}
+
+.team-image:hover .team-icon span:nth-child(3) i {
+
+    transition-delay: 0.5s;
+    /* Delay for the third icon */
+}
