@@ -94,48 +94,68 @@ img {
     border-radius: 8px;
 
 }
+
 /* Event Section Container */
+.event-cards {
+    display: flex;
+    gap: 10px;
+}
+
 .event-section {
     background-color: #003ACF1A;
     width: 30%;
-    padding: 20px; /* Add padding for better spacing */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    overflow: hidden; /* Ensure content stays within the container */
-    margin: 20px auto; /* Center the container and add vertical margin */
+    padding: 20px;
+    /* Add padding for better spacing */
+    border-radius: 10px;
+    /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    overflow: hidden;
+    /* Ensure content stays within the container */
+    margin: 20px auto;
+    /* Center the container and add vertical margin */
 }
 
 /* Event Image Container */
 .event-image {
     position: relative;
-    border-radius: 10px; /* Match border-radius with container */
-    overflow: hidden; /* Ensure image and buttons stay within boundaries */
+    border-radius: 10px;
+    /* Match border-radius with container */
+    overflow: hidden;
+    /* Ensure image and buttons stay within boundaries */
 }
 
 /* Image Styling */
 .event-image img {
     width: 100%;
-    display: block; /* Remove any unwanted spacing below the image */
+    display: block;
+    /* Remove any unwanted spacing below the image */
 }
 
 /* Event Button Container */
 .event-button {
     position: absolute;
-    top: 10px; /* Adjust top position as needed */
+    top: 10px;
+    /* Adjust top position as needed */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px; /* Space between buttons */
-    padding: 0 10px; /* Add horizontal padding */
-    width: calc(100% - 20px); /* Adjust width considering padding */
-    box-sizing: border-box; /* Ensure padding doesn't affect width calculation */
+    gap: 10px;
+    /* Space between buttons */
+    padding: 0 10px;
+    /* Add horizontal padding */
+    width: calc(100% - 20px);
+    /* Adjust width considering padding */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width calculation */
 }
-.music-btn{
+
+.music-btn {
     background: linear-gradient(98.21deg, #7342F9 4.46%, #8053FA 95.19%);
     border: none;
     margin-top: 10px;
     padding: 6px 20px;
-    border-radius:6px;
+    border-radius: 6px;
     color: white;
 
 }
@@ -146,10 +166,14 @@ img {
     border: none;
     padding: 8px 20px;
     color: white;
-    flex-grow: 1; /* Allow buttons to grow and fit container */
-    margin: 0 5px; /* Adjust margins for spacing */
-    white-space: nowrap; /* Ensure text doesn't wrap */
-    border-radius: 5px; /* Optional: Add border-radius to buttons */
+    flex-grow: 1;
+    /* Allow buttons to grow and fit container */
+    margin: 0 5px;
+    /* Adjust margins for spacing */
+    white-space: nowrap;
+    /* Ensure text doesn't wrap */
+    border-radius: 5px;
+    /* Optional: Add border-radius to buttons */
 }
 
 /* Event Calendar Styling */
@@ -158,14 +182,35 @@ img {
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px; /* Add margin for spacing */
+    margin-top: 10px;
+    /* Add margin for spacing */
 }
 
 /* Calendar Item Styling */
 .calender {
     background-color: white;
     text-align: center;
-    padding: 5px 10px; /* Add padding for better appearance */
-    border-radius: 5px; /* Match border-radius with buttons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+    padding: 5px 10px;
+    /* Add padding for better appearance */
+    border-radius: 5px;
+    /* Match border-radius with buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add subtle shadow */
+}
+
+/* Team Section */
+.team-header-text {
+    position: relative;
+
+}
+
+.team-header-text::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    top: 20px;
+    bottom: 0;
+    left: 170px;
+    background-color: #111;
 }
